@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_animals"
+    tools:context=".fragment.AnimalsFragment" >
+
+    <ImageButton
+        android:id="@+id/buttonDog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/dog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/dog" />
+
+    <ImageButton
+        android:id="@+id/buttonCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/cat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+        android:contentDescription="@string/cat" />
+
+    <ImageButton
+        android:id="@+id/buttonLion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/lion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDog"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/lion" />
+
+    <ImageButton
+        android:id="@+id/buttonMonkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/monkey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCat"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+        android:contentDescription="@string/monkey" />
+
+    <ImageButton
+        android:id="@+id/buttonSheep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/sheep"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLion"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+        android:contentDescription="@string/sheep" />
+
+    <ImageButton
+        android:id="@+id/buttonCow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/cow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLion"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+        android:contentDescription="@string/cow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
